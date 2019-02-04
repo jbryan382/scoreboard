@@ -17,5 +17,8 @@
     "eslint-plugin-standard": "^4.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "netlify-cli": "^2.6.6"
   }
 }
