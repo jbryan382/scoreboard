@@ -13,6 +13,11 @@ body {
 
 h1 {
 	text-align: center;
+	background-color: aquamarine;
+	margin-right: 30rem;
+	margin-left: 30rem;
+	border: solid yellowgreen;
+	border-radius: 10px;
 }
 
 .score-area {
@@ -22,6 +27,20 @@ h1 {
 
 .score-area p {
 	font-size: 3rem;
+}
+
+.team1 {
+	background-color: blue;
+	border: solid black;
+	border-radius: 10px;
+	padding: 2rem;
+}
+
+.team2 {
+	background-color: red;
+	border: solid black;
+	border-radius: 10px;
+	padding: 2rem;
 }
 
 .update-score {
