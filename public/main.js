@@ -29,7 +29,7 @@ const buttons = () => {
 
 const increaseCounter1 = () => {
   console.log('Button Clicked')
-  if (counter1 <= 20) {
+  if (counter1 <= 20 && counter2 !== 21) {
     counter1 = counter1 + 1
     console.log(counter1)
     document.querySelector('.team1Score').textContent = counter1
@@ -45,13 +45,13 @@ const increaseCounter1 = () => {
       buttons.classList.remove('team-1-subtract-1-button')
       buttons.classList.remove('team-2-subtract-1-button')
       buttons.classList.add('Hidden')
+    } else {
+      return
     }
-  } else {
-    return
   }
 }
 const increaseCounter2 = () => {
-  if (counter2 <= 20) {
+  if (counter2 <= 20 && counter1 !== 21) {
     counter2 = counter2 + 1
     console.log(counter2)
     document.querySelector('.team2Score').textContent = counter2
