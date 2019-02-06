@@ -31,36 +31,45 @@ const increaseCounter1 = () => {
   console.log('Button Clicked')
   if (counter1 <= 20) {
     counter1 = counter1 + 1
+    console.log(counter1)
+    document.querySelector('.team1Score').textContent = counter1
     if (counter1 === 21) {
       document.querySelector('.Hidden').classList.add('WinPopup')
       document.querySelector('.WinPopup').classList.remove('Hidden')
       document.querySelector('.winner').textContent = teamName1
       // Attempt to remove buttons after 21.
-      // buttons.classList.remove('update-team-1-name')
-      // buttons.classList.remove('update-team-2-name')
-      // buttons.classList.remove('team-1-add-1-button')
-      // buttons.classList.remove('team-2-add-1-button')
-      // buttons.classList.remove('team-1-subtract-1-button')
-      // buttons.classList.remove('team-2-subtract-1-button')
+      buttons.classList.remove('update-team-1-name')
+      buttons.classList.remove('update-team-2-name')
+      buttons.classList.remove('team-1-add-1-button')
+      buttons.classList.remove('team-2-add-1-button')
+      buttons.classList.remove('team-1-subtract-1-button')
+      buttons.classList.remove('team-2-subtract-1-button')
+      buttons.classList.add('Hidden')
     }
-    console.log(counter1)
-    document.querySelector('.team1Score').textContent = counter1
   } else {
-    document.querySelector('.team1Score').textContent = counter1
+    return
   }
 }
 const increaseCounter2 = () => {
   if (counter2 <= 20) {
     counter2 = counter2 + 1
+    console.log(counter2)
+    document.querySelector('.team2Score').textContent = counter2
     if (counter2 === 21) {
       document.querySelector('.Hidden').classList.add('WinPopup')
       document.querySelector('.WinPopup').classList.remove('Hidden')
       document.querySelector('.winner').textContent = teamName2
+      // Attempt to remove buttons after 21.
+      buttons.classList.remove('update-team-1-name')
+      buttons.classList.remove('update-team-2-name')
+      buttons.classList.remove('team-1-add-1-button')
+      buttons.classList.remove('team-2-add-1-button')
+      buttons.classList.remove('team-1-subtract-1-button')
+      buttons.classList.remove('team-2-subtract-1-button')
+      buttons.classList.add('Hidden')
     }
-    console.log(counter2)
-    document.querySelector('.team2Score').textContent = counter2
   } else {
-    document.querySelector('.team2Score').textContent = counter2
+    return
   }
 }
 
