@@ -39,10 +39,15 @@ const increaseCounter1 = () => {
       document.querySelector('.winner').textContent = teamName1
       // Attempt to remove buttons after 21.
       buttons.classList.remove('update-team-1-name')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('update-team-2-name')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-1-add-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-2-add-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-1-subtract-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-2-subtract-1-button')
       buttons.classList.add('Hidden')
     } else {
@@ -61,10 +66,15 @@ const increaseCounter2 = () => {
       document.querySelector('.winner').textContent = teamName2
       // Attempt to remove buttons after 21.
       buttons.classList.remove('update-team-1-name')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('update-team-2-name')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-1-add-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-2-add-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-1-subtract-1-button')
+      buttons.classList.add('Hidden')
       buttons.classList.remove('team-2-subtract-1-button')
       buttons.classList.add('Hidden')
     }
